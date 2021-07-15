@@ -1,0 +1,22 @@
+.btn {
+    font-size: $base-font-size-lg;
+    padding: .5rem 1.5rem !important;
+    font-weight: 600;
+    &.btn-primary {
+        background-color: $primary-color;
+        border-color: $primary-color;
+        &:active,
+        &:focus {
+            box-shadow: 0 0 0 0.2rem rgba($primary-color, .25);
+        }
+        &:hover {
+            background-color: darken($primary-color, 7.5);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: $base-font-size-sm;
+    }
+}

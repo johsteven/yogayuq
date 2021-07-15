@@ -1,0 +1,9 @@
+.card {
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    &-header {
+        background-color: transparent;
+        border: none
+    }
+}

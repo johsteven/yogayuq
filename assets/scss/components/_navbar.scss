@@ -1,0 +1,104 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    align-items: center;
+    padding: 20px 0;
+    .container {
+        .navbar-logo {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            color: #fff;
+            span {
+                font-size: 18px;
+            }
+        }
+        .navbar-nav {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            .links-item {
+                display: flex;
+                align-items: center;
+                margin: auto;
+            }
+            .btns {
+                display: flex;
+                align-items: center;
+                .btn {
+                    color: #fff !important;
+                }
+            }
+            .nav-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 10px;
+                .nav-link {
+                    color: #fff;
+                    font-weight: 600;
+                    position: relative;
+                    &.active {
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 15px;
+                            height: 2px;
+                            background-color: $primary-color;
+                            bottom: 2.75px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                }
+            }
+        }
+        .navbar-toggler {
+            padding: 0;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        .container {
+            .navbar-collapse {
+                margin-top: 22.5px;
+                .navbar-nav {
+                    background-color: #fff;
+                    color: #1A1C20;
+                    padding: 10px 20px;
+                    padding-top: 15px;
+                    >* {
+                        width: 100%;
+                    }
+                    .links-item {
+                        flex-direction: column !important;
+                        margin: 0;
+                    }
+                    .btns {
+                        flex-direction: column;
+                        .btn {
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+                    .nav-item {
+                        width: 100%;
+                        margin: 0;
+                        margin-bottom: 10px;
+                        .nav-link {
+                            text-align: center;
+                            color: #1A1C20;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
