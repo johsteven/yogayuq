@@ -15,11 +15,14 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <div class="navbar-logo">
                 <span>YogaYuq.</span>
@@ -57,14 +60,14 @@
     <section class="header">
         <div class="container">
             <div class="main">
-                <h1 class="title">Taking yoga beyond the limit reach your new potential</h1>
-                <p class="text">Yoga is actually an exercise of body and mind. The benefits of yoga not only help the body become fresher and fitter, but also can control stress</p>
+                <h1 class="title" data-aos="zoom-out" data-aos-delay="400">Taking yoga beyond the limit reach your new potential</h1>
+                <p class="text" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">Yoga is actually an exercise of body and mind. The benefits of yoga not only help the body become fresher and fitter, but also can control stress</p>
                 <div class="btns">
-                    <a href="#" class="btn btn-primary me-4">Sign Up</a>
-                    <a href="#" class="btn btn-outline-light">Watch a Video</a>
+                    <a href="#" class="btn btn-primary me-3" data-aos="zoom-in" data-aos-delay="400">Sign Up</a>
+                    <a href="#" class="btn btn-outline-light" data-aos="zoom-in" data-aos-delay="800">Watch a Video</a>
                 </div>
             </div>
-            <div class="info">
+            <div class="info" data-aos="fade-left" data-aos-delay="800">
                 <div class="contact-info">
                     <a href="#" class="me-4">(603) 555-0123</a>
                     <a href="#">hello@yogayuq.com</a>
@@ -95,8 +98,8 @@
     <section class="service">
         <div class="container">
             <div class="main mb-5">
-                <h2 class="title">Benefits You get when using our services</h2>
-                <p class="text">While we can customize your needs plan to suit your needs, most clients schedule regular interior services</p>
+                <h2 class="title" data-aos="fade-right" data-aos-delay="300">Benefits You get when using our services</h2>
+                <p class="text" data-aos="fade-left" data-aos-delay="300">While we can customize your needs plan to suit your needs, most clients schedule regular interior services</p>
             </div>
             <div class="services row justify-content-center">
                 <div class="card col-lg-3 col-md-5 mx-2 mb-3">
@@ -151,17 +154,17 @@
                 <img src="assets/images/img-help.png" alt="">
             </div>
             <div class="main">
-                <h2 class="title">We will help you to be healthy spiritually and physically</h2>
-                <p class="text">We believe sunshine is one of humanity’s most valuable, yet underutilised, resources. Not only can solar energy sustainably power hospitals.</p>
+                <h2 class="title" data-aos="fade-left" data-aos-delay="300">We will help you to be healthy spiritually and physically</h2>
+                <p class="text" data-aos="fade-left" data-aos-delay="400">We believe sunshine is one of humanity’s most valuable, yet underutilised, resources. Not only can solar energy sustainably power hospitals.</p>
                 <a href="#" class="btn btn-primary">Learn More</a>
             </div>
         </div>
     </section>
 
     <section class="classes">
-        <div class="container swiper-container classes-swipe">
+        <div class="container swiper-container" id="classes-swipe-container">
             <div class="main">
-                <h2 class="title">Find the class <br> you want</h2>
+                <h2 class="title" data-aos="fade-right" data-aos-delay="300">Find the class <br> you want</h2>
                 <div class="slider">
                     <div class="slide" id="swiper-button-prev">
                         <svg width="37" height="29" viewBox="0 0 46 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -170,58 +173,58 @@
                         </svg>
                     </div>
                     <div class="slide" id="swiper-button-next">
-                        <svg width="37 " height="29 " viewBox="0 0 46 38 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-                            <path d="M42.6665 19.2687L2.6665 19.2687 " stroke="#B6B6B6 " stroke-width="5 " stroke-linecap="round " stroke-linejoin="round "/>
-                            <path d="M26.5337 3.20356L42.667 19.2676L26.5337 35.3342 " stroke="#B6B6B6 " stroke-width="5 " stroke-linecap="round " stroke-linejoin="round "/>
+                        <svg width="37" height="29" viewBox="0 0 46 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M42.6665 19.2687L2.6665 19.2687" stroke="#B6B6B6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M26.5337 3.20356L42.667 19.2676L26.5337 35.3342" stroke="#B6B6B6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                     </div>
                 </div>
             </div>
-            <div class="class-imgs swiper-wrapper ">
-                <div class="class-img swiper-slide ">
-                    <img src="assets/images/class-img-1.png " alt=" ">
+            <div class="class-imgs swiper-wrapper">
+                <a href="#" class="class-img swiper-slide">
+                    <img src="assets/images/class-img-1.png" alt="">
                     <p>Beginner Yoga <br> Class</p>
-                </div>
-                <div class="class-img swiper-slide ">
-                    <img src="assets/images/class-img-2.png " alt=" ">
+                </a>
+                <a href="#" class="class-img swiper-slide">
+                    <img src="assets/images/class-img-2.png" alt="">
                     <p>Spritual Meditation <br> Class</p>
-                </div>
-                <div class="class-img swiper-slide ">
-                    <img src="assets/images/class-img-3.png " alt=" ">
+                </a>
+                <a href="#" class="class-img swiper-slide">
+                    <img src="assets/images/class-img-3.png" alt="">
                     <p>Middle Class Yoga <br> Group</p>
-                </div>
-                <div class="class-img swiper-slide ">
-                    <img src="assets/images/class-img-4.png " alt=" ">
+                </a>
+                <a href="#" class="class-img swiper-slide">
+                    <img src="assets/images/class-img-4.png" alt="">
                     <p>Woman's Gym <br> Class</p>
-                </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="reservation ">
-        <div class="container ">
-            <div class="bg-img ">
-                <div class="reservation-steps ">
-                    <h3 class="title ">3 Steps To Make A <br> Class Reservation</h3>
-                    <div class="step ">
-                        <div class="number ">01</div>
-                        <div class="ms-5 ">
-                            <p class="title ">Call the number on the website</p>
-                            <p class="text ">The first step you have to call the number on the website</p>
+    <section class="reservation">
+        <div class="container">
+            <div class="bg-img">
+                <div class="reservation-steps">
+                    <h3 class="title">3 Steps To Make A <br> Class Reservation</h3>
+                    <div class="step">
+                        <div class="number">01</div>
+                        <div class="ms-5">
+                            <p class="title">Call the number on the website</p>
+                            <p class="text">The first step you have to call the number on the website</p>
                         </div>
                     </div>
-                    <div class="step ">
-                        <div class="number ">02</div>
-                        <div class="ms-5 ">
-                            <p class="title ">Choose the class you want</p>
-                            <p class="text ">After that you can choose the class you want to study</p>
+                    <div class="step">
+                        <div class="number">02</div>
+                        <div class="ms-5">
+                            <p class="title">Choose the class you want</p>
+                            <p class="text">After that you can choose the class you want to study</p>
                         </div>
                     </div>
-                    <div class="step ">
-                        <div class="number ">03</div>
-                        <div class="ms-5 ">
-                            <p class="title ">Make payments every week</p>
-                            <p class="text ">After payment every week you can get a healthy body</p>
+                    <div class="step">
+                        <div class="number">03</div>
+                        <div class="ms-5">
+                            <p class="title">Make payments every week</p>
+                            <p class="text">After payment every week you can get a healthy body</p>
                         </div>
                     </div>
                 </div>
@@ -229,108 +232,108 @@
         </div>
     </section>
 
-    <section class="financial ">
-        <div class="container ">
-            <div class="main ">
-                <h2 class="title ">Our Financial Expert <br> For Your Brand</h2>
+    <section class="financial">
+        <div class="container">
+            <div class="main">
+                <h2 class="title" data-aos="fade-right" data-aos-delay="300">Our Financial Expert <br> For Your Brand</h2>
             </div>
-            <div class="financial-imgs row justify-content-center ">
-                <div class="financial-img col-lg-3 col-md-6 col-sm-8 mb-4 ">
-                    <img src="assets/images/financial-img-1.png " alt=" ">
-                    <p class="title ">Jane Cooper</p>
-                    <p class="text ">Yoga Instructor</p>
-                </div>
-                <div class="financial-img col-lg-3 col-md-6 col-sm-8 mb-4 ">
-                    <img src="assets/images/financial-img-2.png " alt=" ">
-                    <p class="title ">Celine Evansinea</p>
-                    <p class="text ">Yoga Acrobatic Instructor</p>
-                </div>
-                <div class="financial-img col-lg-3 col-md-6 col-sm-8 mb-4 ">
-                    <img src="assets/images/financial-img-3.png " alt=" ">
-                    <p class="title ">Stefani Grahamarlie</p>
-                    <p class="text ">Meditation Instructor</p>
-                </div>
-                <div class="financial-img col-lg-3 col-md-6 col-sm-8 mb-4 ">
-                    <img src="assets/images/financial-img-4.png " alt=" ">
-                    <p class="title ">Leslie Alexander</p>
-                    <p class="text ">Acro Yoga Instructor</p>
-                </div>
+            <div class="financial-imgs row justify-content-center">
+                <a href="#" class="financial-img col-lg-3 col-md-6 col-sm-8 mb-4">
+                    <img src="assets/images/financial-img-1.png" alt="">
+                    <p class="title">Jane Cooper</p>
+                    <p class="text">Yoga Instructor</p>
+                </a>
+                <a href="#" class="financial-img col-lg-3 col-md-6 col-sm-8 mb-4">
+                    <img src="assets/images/financial-img-2.png" alt="">
+                    <p class="title">Celine Evansinea</p>
+                    <p class="text">Yoga Acrobatic Instructor</p>
+                </a>
+                <a href="#" class="financial-img col-lg-3 col-md-6 col-sm-8 mb-4">
+                    <img src="assets/images/financial-img-3.png" alt="">
+                    <p class="title">Stefani Grahamarlie</p>
+                    <p class="text">Meditation Instructor</p>
+                </a>
+                <a href="#" class="financial-img col-lg-3 col-md-6 col-sm-8 mb-4">
+                    <img src="assets/images/financial-img-4.png" alt="">
+                    <p class="title">Leslie Alexander</p>
+                    <p class="text">Acro Yoga Instructor</p>
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="testimonial ">
-        <div class="container swiper-container testimonial-swipe ">
-            <div class="main ">
-                <h2 class="title ">What do those who have <br> done the exercise say?</h2>
+    <section class="testimonial">
+        <div class="container swiper-container" id="testimonial-swipe-container">
+            <div class="main">
+                <h2 class="title" data-aos="fade-right" data-aos-delay="400">What do those who have <br> done the exercise say?</h2>
             </div>
-            <div class="testimonials swiper-wrapper ">
-                <div class="card me-3 mb-4 swiper-slide ">
-                    <img src="assets/images/testimonial-1.png " class="img-profile " alt=" ">
-                    <div class="card-body ">
-                        <p class="text ">“Everyone working in the office is very knowledgeable about all types of dental work and options for your individual needs.”</p>
+            <div class="testimonials swiper-wrapper">
+                <div class="card me-3 mb-4 swiper-slide">
+                    <img src="assets/images/testimonial-1.png" class="img-profile" alt="">
+                    <div class="card-body">
+                        <p class="text">“Everyone working in the office is very knowledgeable about all types of dental work and options for your individual needs.”</p>
                         <hr>
-                        <p class="name ">Brooklyn Simmons</p>
-                        <p class="role ">Founder Tahu Bulat</p>
+                        <p class="name">Brooklyn Simmons</p>
+                        <p class="role">Founder Tahu Bulat</p>
                     </div>
                 </div>
-                <div class="card me-3 mb-4 swiper-slide ">
-                    <img src="assets/images/testimonial-2.png " class="img-profile " alt=" ">
-                    <div class="card-body ">
-                        <p class="text ">“Everyone working in the office is very knowledgeable about all types of dental work and options for your individual needs.”</p>
+                <div class="card me-3 mb-4 swiper-slide">
+                    <img src="assets/images/testimonial-2.png" class="img-profile" alt="">
+                    <div class="card-body">
+                        <p class="text">“Everyone working in the office is very knowledgeable about all types of dental work and options for your individual needs.”</p>
                         <hr>
-                        <p class="name ">Jacob Jones</p>
-                        <p class="role ">Founder Bubur Naik Haji</p>
+                        <p class="name">Jacob Jones</p>
+                        <p class="role">Founder Bubur Naik Haji</p>
                     </div>
                 </div>
-                <div class="card me-3 mb-4 swiper-slide ">
-                    <img src="assets/images/testimonial-3.png " class="img-profile " alt=" ">
-                    <div class="card-body ">
-                        <p class="text ">“Everyone working in the office is very knowledgeable about all types of dental work and options for your individual needs.”</p>
+                <div class="card me-3 mb-4 swiper-slide">
+                    <img src="assets/images/testimonial-3.png" class="img-profile" alt="">
+                    <div class="card-body">
+                        <p class="text">“Everyone working in the office is very knowledgeable about all types of dental work and options for your individual needs.”</p>
                         <hr>
-                        <p class="name ">Esther Howard</p>
-                        <p class="role ">Founder Susuh Jahe</p>
+                        <p class="name">Esther Howard</p>
+                        <p class="role">Founder Susuh Jahe</p>
                     </div>
                 </div>
-                <div class="card me-3 mb-4 swiper-slide ">
-                    <img src="assets/images/testimonial-1.png " class="img-profile " alt=" ">
-                    <div class="card-body ">
-                        <p class="text ">“Everyone working in the office is very knowledgeable about all types of dental work and options for your individual needs.”</p>
+                <div class="card me-3 mb-4 swiper-slide">
+                    <img src="assets/images/testimonial-1.png" class="img-profile" alt="">
+                    <div class="card-body">
+                        <p class="text">“Everyone working in the office is very knowledgeable about all types of dental work and options for your individual needs.”</p>
                         <hr>
-                        <p class="name ">Courtney Henry</p>
-                        <p class="role ">Founder Tahu Bulat</p>
+                        <p class="name">Courtney Henry</p>
+                        <p class="role">Founder Tahu Bulat</p>
                     </div>
                 </div>
             </div>
-            <div class="swiper-pagination testimonial-swipe-pagination"></div>
+            <div class="swiper-pagination" id="testimonial-swipe-pagination"></div>
         </div>
     </section>
 
-    <section class="footer ">
-        <div class="container ">
-            <div class="contact ">
-                <p class="label ">Subcribes</p>
-                <h3 class="title ">Join Our Email</h3>
-                <div class="input-group ">
-                    <input type="text " class="form-control " placeholder="Enter email address ">
-                    <button class="btn btn-primary " type="button ">Subcribes</button>
+    <section class="footer">
+        <div class="container">
+            <div class="contact">
+                <p class="label">Subcribes</p>
+                <h3 class="title">Join Our Email</h3>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Enter email address">
+                    <button class="btn btn-primary" type="button">Subcribes</button>
                 </div>
             </div>
-            <div class="footer-info row w-100 mb-5 ">
-                <div class="col-xl-auto d-flex flex-column me-auto mb-4 mb-xl-0 ">
-                    <div class="mb-4 mb-xl-0 ">
-                        <div class="footer-item footer-brand ">
-                            <a href="# " class="footer-logo ">YogaYuq</a>
-                            <p class="footer-text ">The service that is served <br> is so very charming with <br> friendly waiters</p>
-                            <div class="icons-scm ">
-                                <a href="# " class="icon-scm "><svg width="9 " height="18 " viewBox="0 0 11 20 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-                                    <path fill-rule="evenodd " clip-rule="evenodd " d="M2.945 20V11.166H0V7.485H2.945V4.54C2.945 1.497 4.871 0 7.585 0C8.885 0 10.003 0.0970001 10.329 0.14V3.32H8.446C6.97 3.32 6.626 4.023 6.626 5.052V7.485H10.306L9.57
-                        11.165H6.626L6.685 20 " fill="white "/>
+            <div class="footer-info row w-100 mb-5">
+                <div class="col-xl-auto d-flex flex-column me-auto mb-4 mb-xl-0">
+                    <div class="mb-4 mb-xl-0">
+                        <div class="footer-item footer-brand" data-aos="fade-down" data-aos-delay="400">
+                            <a href="#" class="footer-logo">YogaYuq</a>
+                            <p class="footer-text">The service that is served <br> is so very charming with <br> friendly waiters</p>
+                            <div class="icons-scm">
+                                <a href="#" class="icon-scm"><svg width="9" height="18" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.945 20V11.166H0V7.485H2.945V4.54C2.945 1.497 4.871 0 7.585 0C8.885 0 10.003 0.0970001 10.329 0.14V3.32H8.446C6.97 3.32 6.626 4.023 6.626 5.052V7.485H10.306L9.57
+                        11.165H6.626L6.685 20" fill="white"/>
                                     </svg>
                                 </a>
-                                <a href="# " class="icon-scm ">
-                                    <svg width="17 " height="17 " viewBox="0 0 22 22 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-                                        <path fill-rule="evenodd " clip-rule="evenodd " d="M6.465 0.066C7.638 0.012 8.012 0 11 0C13.988 0 14.362 0.013 15.534 0.066C16.706 0.119 17.506 0.306 18.206 0.577C18.939 0.854 19.604 1.287 20.154 1.847C20.714
+                                <a href="#" class="icon-scm">
+                                    <svg width="17" height="17" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.465 0.066C7.638 0.012 8.012 0 11 0C13.988 0 14.362 0.013 15.534 0.066C16.706 0.119 17.506 0.306 18.206 0.577C18.939 0.854 19.604 1.287 20.154 1.847C20.714
                         2.396 21.146 3.06 21.422 3.794C21.694 4.494 21.88 5.294 21.934 6.464C21.988 7.639 22 8.013 22 11C22 13.988 21.987 14.362 21.934 15.535C21.881 16.705 21.694 17.505 21.422 18.205C21.146 18.9391 20.7133 19.6042 20.154 20.154C19.604 20.714
                         18.939 21.146 18.206 21.422C17.506 21.694 16.706 21.88 15.536 21.934C14.362 21.988 13.988 22 11 22C8.012 22 7.638 21.987 6.465 21.934C5.295 21.881 4.495 21.694 3.795 21.422C3.06092 21.146 2.39582 20.7133 1.846 20.154C1.28638 19.6047
                         0.853315 18.9399 0.577 18.206C0.306 17.506 0.12 16.706 0.066 15.536C0.012 14.361 0 13.987 0 11C0 8.012 0.013 7.638 0.066 6.466C0.119 5.294 0.306 4.494 0.577 3.794C0.853723 3.06008 1.28712 2.39531 1.847 1.846C2.39604 1.2865 3.06047
@@ -345,50 +348,50 @@
                         12.4777 16.2236 13.1637C15.9395 13.8497 15.523 14.473 14.998 14.998C13.9377 16.0583 12.4995 16.654 11 16.654C9.50046 16.654 8.06234 16.0583 7.002 14.998C5.94166 13.9377 5.34597 12.4995 5.34597 11C5.34597 9.50046 5.94166 8.06234 7.002
                         7.002ZM17.908 6.188C18.0381 6.06527 18.1423 5.91768 18.2143 5.75397C18.2863 5.59027 18.3248 5.41377 18.3274 5.23493C18.33 5.05609 18.2967 4.87855 18.2295 4.71281C18.1622 4.54707 18.0624 4.39651 17.936 4.27004C17.8095 4.14357 17.6589
                         4.04376 17.4932 3.97652C17.3275 3.90928 17.1499 3.87598 16.9711 3.87858C16.7922 3.88119 16.6157 3.91965 16.452 3.9917C16.2883 4.06374 16.1407 4.1679 16.018 4.298C15.7793 4.55103 15.6486 4.88712 15.6537 5.23493C15.6588 5.58274 15.7992
-                        5.91488 16.0452 6.16084C16.2911 6.40681 16.6233 6.54723 16.9711 6.5523C17.3189 6.55737 17.655 6.42669 17.908 6.188Z " fill="white "/>
+                        5.91488 16.0452 6.16084C16.2911 6.40681 16.6233 6.54723 16.9711 6.5523C17.3189 6.55737 17.655 6.42669 17.908 6.188Z" fill="white"/>
                                         </svg>
                                 </a>
-                                <a href="# " class="icon-scm ">
-                                    <svg width="17 " height="17 " viewBox="0 0 22 18 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                <a href="#" class="icon-scm">
+                                    <svg width="17" height="17" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M21.5 3.00002L19.25 3.37502L20.75 1.50002L18.125 2.25002C14.75 -1.49998 9.5 2.62502 11 6.00002C5 6.00002 2 1.50002 2 1.50002C2 1.50002 -0.25 4.87502 3.5 7.50002L1.25 6.75002C1.25 9.00002 2.75 10.5 5.375
-                        11.25H2.75C4.25 14.25 6.875 14.25 6.875 14.25C6.875 14.25 4.625 16.125 0.5 16.125C12.875 22.125 20.375 10.875 19.25 4.87502L21.5 3.00002Z " fill="white "/>
+                        11.25H2.75C4.25 14.25 6.875 14.25 6.875 14.25C6.875 14.25 4.625 16.125 0.5 16.125C12.875 22.125 20.375 10.875 19.25 4.87502L21.5 3.00002Z" fill="white"/>
                                         </svg>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-auto d-flex flex-column flex-xl-row ">
-                    <div class="mb-4 mb-xl-0 ">
-                        <div class="footer-item ">
-                            <h6 class="footer-label ">Features</h6>
-                            <a href="# " class="footer-text ">For Sellers</a>
-                            <a href="# " class="footer-text ">For Buyers</a>
-                            <a href="# " class="footer-text ">Testimonial</a>
-                            <a href="# " class="footer-text ">Premium</a>
+                <div class="col-xl-auto d-flex flex-column flex-xl-row">
+                    <div class="mb-4 mb-xl-0">
+                        <div class="footer-item" data-aos="fade-down" data-aos-delay="700">
+                            <h6 class="footer-label">Features</h6>
+                            <a href="#" class="footer-text">For Sellers</a>
+                            <a href="#" class="footer-text">For Buyers</a>
+                            <a href="#" class="footer-text">Testimonial</a>
+                            <a href="#" class="footer-text">Premium</a>
                         </div>
                     </div>
-                    <div class="mb-4 mb-xl-0 ">
-                        <div class="footer-item ">
-                            <h6 class="footer-label ">Company</h6>
-                            <a href="# " class="footer-text ">About Us</a>
-                            <a href="# " class="footer-text ">Contact</a>
-                            <a href="# " class="footer-text ">Privacy & Terms</a>
+                    <div class="mb-4 mb-xl-0">
+                        <div class="footer-item" data-aos="fade-down" data-aos-delay="1000">
+                            <h6 class="footer-label">Company</h6>
+                            <a href="#" class="footer-text">About Us</a>
+                            <a href="#" class="footer-text">Contact</a>
+                            <a href="#" class="footer-text">Privacy & Terms</a>
                         </div>
                     </div>
-                    <div class="mb-4 mb-xl-0 ">
-                        <div class="footer-item ">
-                            <h6 class="footer-label ">Contact Us</h6>
-                            <a href="# " class="footer-text ">(239) 555-0108</a>
-                            <a href="# " class="footer-text ">Cucuan.info@email.com</a>
+                    <div class="mb-4 mb-xl-0">
+                        <div class="footer-item" data-aos="fade-down" data-aos-delay="1300">
+                            <h6 class="footer-label">Contact Us</h6>
+                            <a href="#" class="footer-text">(239) 555-0108</a>
+                            <a href="#" class="footer-text">Cucuan.info@email.com</a>
                         </div>
                     </div>
-                    <div class="mb-4 mb-xl-0 ">
-                        <div class="footer-item ">
-                            <h6 class="footer-label ">Office</h6>
-                            <a href="# " class="footer-text ">4517 Washington Manchester, <br>
+                    <div class="mb-4 mb-xl-0">
+                        <div class="footer-item" data-aos="fade-down" data-aos-delay="1600">
+                            <h6 class="footer-label">Office</h6>
+                            <a href="#" class="footer-text">4517 Washington Manchester, <br>
                                 Kentucky 39495</a>
-                            <a href="# " class="footer-text ">Indonesia</a>
+                            <a href="#" class="footer-text">Indonesia</a>
                         </div>
                     </div>
                 </div>
@@ -397,14 +400,17 @@
     </section>
 
     <!-- Bootstrap Bundle JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.js "></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <!-- My JS -->
-    <script src="assets/js/main.js "></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
