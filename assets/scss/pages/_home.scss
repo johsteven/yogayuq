@@ -34,9 +34,6 @@ section {
     .swiper-slide {
         flex-shrink: unset;
     }
-    .swiper-container {
-        overflow: visible;
-    }
 }
 
 section.header {
@@ -194,9 +191,6 @@ section.classes {
                 filter: brightness(.5);
                 margin-right: 22.5px;
                 transition: .3s;
-                &:hover {
-                    transform: scale(1.05);
-                }
                 img {
                     width: 280px;
                     height: 320px;
