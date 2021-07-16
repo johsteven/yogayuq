@@ -1,6 +1,13 @@
 // Variables
+const slides = document.querySelectorAll(".slide");
 
 // Functions
+function slideEvent() {
+    slides.forEach(slide => {
+        slide.classList.remove("active")
+    })
+    const item = this.classList.add("active");
+}
 
 // Main
 window.addEventListener("load", init);
@@ -33,4 +40,8 @@ function load() {
     });
 }
 
-function eventListener() {}
+function eventListener() {
+    slides.forEach(slide => {
+        slide.addEventListener("click", slideEvent);
+    })
+}
